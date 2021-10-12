@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <title>나의 타고난 자연의 모습은?</title>
-    <!--sun-->
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0", user-scalable=no />
-        <meta property="og:url"           content="https://earlyway.github.io/" />
-    <meta property="og:title"         content="나의 타고난 자연의 모습은?1" />
-    <meta property="og:description"   content="생년월일로 알아보는 나의 타고난 성향 테스트1" />
-    <meta property="og:image"         content="/share/kakao/input.jpg" />
-        <!--글씨체-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap" rel="stylesheet">
-        <!--파비콘 appres.org-->
-        <link rel="icon" type="image/png"
-        href="/image/favicon_.png"/>
-        <!--css파일 연결-->
-        <link rel="stylesheet" type="text/css" href="output.css">
-        <!-- 카카오톡 공유하기-->
-        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-        <script>
-            Kakao.init('5bb339cadb6a8c53105514b7e3df11c2');
-        </script>
-    </head>
+<title>나의 타고난 자연의 모습은?</title>
+<!--sun-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" , user-scalable=no />
+    <meta property="og:url" content="https://earlyway.github.io/" />
+    <meta property="og:title" content="나의 타고난 자연의 모습은?1" />
+    <meta property="og:description" content="생년월일로 알아보는 나의 타고난 성향 테스트1" />
+    <meta property="og:image" content="/share/kakao/input.jpg" />
+    <!--글씨체-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <!--파비콘 appres.org-->
+    <link rel="icon" type="image/png" href="/image/favicon_.png" />
+    <!--css파일 연결-->
+    <link rel="stylesheet" type="text/css" href="output.css">
+    <!-- 카카오톡 공유하기-->
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('5bb339cadb6a8c53105514b7e3df11c2');
+    </script>
+</head>
 
 
-    <body>
-        
-        <h1 class="main">
-		나의 타고난 자연의 모습은?
+<body>
 
-        </h1>
-        <!-- 사진 영역 -->
-        <div class="flexbox">
-            <img src="../output_main_img/sun.png"><br>
-        </div>
-        <!-- 결과 문장 영역-->
-        <div class="flexboxmiddle"><h3>밝고 명랑한 당신<br><br></h3>
+    <h1 class="main">
+        나의 타고난 자연의 모습은?
+
+    </h1>
+    <!-- 사진 영역 -->
+    <div class="flexbox">
+        <img src="../output_main_img/sun.png"><br>
+    </div>
+    <!-- 결과 문장 영역-->
+    <div class="flexboxmiddle">
+        <h3>밝고 명랑한 당신<br><br></h3>
         <div id="content_pc">
             태양이 새싹에 빛을 비추듯이<br>
             기본적으로 타인을 봉사하는 마음을 지니고 있습니다.<br>
@@ -60,45 +61,47 @@
             지나친 솔직함으로 구설수에 종종 오를 수 있으므로<br>
             주의해야 합니다.
         </div>
-        </div>
-        <!-- 하단 영역 -->
-        <div class="share">테스트 결과 공유하기
-        </div>
-        <form id="shareitembox">
-            <div class="shareitem">
-                <a href="javascript:sendLink()"id="kakao-link-btn" class="kakao"><img src="image/kakao.png" alt="kakao_connect" id="kakao"></a>
-            <!--<a href="http://twitter.com" target="_blank"><img src="image/twiter.png" alt="twt_connect" id="twt"></a>-->
+    </div>
+    <!-- 하단 영역 -->
+    <div class="share">테스트 결과 공유하기
+    </div>
+    <form id="shareitembox">
+        <div class="shareitem">
+            <a href="javascript:sendLink()" id="kakao-link-btn" class="kakao"><img src="image/kakao.png"
+                    alt="kakao_connect" id="kakao"></a>
+            <a href="javascript:shareTwitter();" target="_self"><img src="image/twiter.png" alt="twt_connect"
+                    id="twt"></a>
             <a href="javascript:copyToClipboard(val)" id="textarea" onclick="copy()" target="_self">
                 <img src="image/url2.png" alt="url_connect" id="urll"></a>
-            </div>
+        </div>
         <div class="resultbottom">
             <button name="restart" type="submit" id="restart" formaction="https://earlyway.github.io/">다시하기</button>
         </div>
-        </form>
-        <div class="footerpc">
-            Copyright Ⓒ Meet eum - Sonㅣ Won seok - An ㅣ Tae gon - Kim . All rights reserved.
-        </div>
-        <div class="footermobile">
-            Copyright Ⓒ Meet eum - Sonㅣ Won seok - An ㅣ<br> Tae gon - Kim . All rights reserved.
-        </div>
-        <script>
-            let url = decodeURI(location.search);
+    </form>
+    <div class="footerpc">
+        Copyright Ⓒ Meet eum - Sonㅣ Won seok - An ㅣ Tae gon - Kim . All rights reserved.
+    </div>
+    <div class="footermobile">
+        Copyright Ⓒ Meet eum - Sonㅣ Won seok - An ㅣ<br> Tae gon - Kim . All rights reserved.
+    </div>
+    <script>
+        let url = decodeURI(location.search);
 
-            temp = url?.split("?"); 
-            data=temp && temp[1].split("="); 
-            name = data[1];
-            
-            
-            
-            //document.getElementsByClassName("main")[0].innerHTML="2님에 타고난 자연의 모습은?";
-            //const mainstr = name + "님에 타고난";
-            const mainstr="\n님에 타고난 자연의 모습은?";
-            document.getElementsByClassName("main")[0].innerHTML=name + mainstr;
-            //console.log(mainstr);
-            //document.getElementsByClassName("main")[0].innerHTML=mainstr;
+        temp = url?.split("?");
+        data = temp && temp[1].split("=");
+        name = data[1];
 
 
-            function sendLink() {
+
+        //document.getElementsByClassName("main")[0].innerHTML="2님에 타고난 자연의 모습은?";
+        //const mainstr = name + "님에 타고난";
+        const mainstr = "\n님에 타고난 자연의 모습은?";
+        document.getElementsByClassName("main")[0].innerHTML = name + mainstr;
+        //console.log(mainstr);
+        //document.getElementsByClassName("main")[0].innerHTML=mainstr;
+
+
+        function sendLink() {
             Kakao.Link.sendDefault({
                 objectType: 'feed',
                 content: {
@@ -132,9 +135,18 @@
         function copy() {
             copyToClipboard('https://earlyway.github.io/symritest_sun');
             console.log('Copied!');
+            alert("url 주소 복사가 완료되었습니다. 테스트 결과를 공유해보세요 🙂")
         }
 
-            
-            </script>
+        //twitter 공유기능
+        function shareTwitter() {
+            var sendText = "나의 타고난 자연의 모습은? 결과 보러가기"; // 전달할 텍스트
+            var sendUrl = "https://earlyway.github.io/symritest_sun"; // 전달할 URL
+            window.open("https://twitter.com/intent/tweet?text=" + sendText + "&url=" + sendUrl);
+        }
+
+
+    </script>
 </body>
+
 </html>
